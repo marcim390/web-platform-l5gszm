@@ -1,0 +1,714 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+<style>.items-center{align-items:center}.grid-cols-6{grid-template-columns: repeat(6, minmax(0, 1fr))}.grid-cols-5{	grid-template-columns: repeat(5, minmax(0, 1fr))}.grid-cols-4{grid-template-columns: repeat(4, minmax(0, 1fr))}.grid-cols-2{grid-template-columns: repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns: repeat(3, minmax(0, 1fr))}.grid-cols-1{grid-template-columns: repeat(1, minmax(0, 1fr))}.grid{display:grid}.basis-1\/2{flex-basis:50%}.flex{display:flex}.gap-1{gap:4px}.gap-2{gap:8px}.gap-4{gap:16px}.gap-6{gap:24px}.gap-12{48px}.gap-24{gap:96px}.justify-center{justify-content:center}.basis-full{flex-basis:100%}html{scroll-behavior:smooth;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}body,center,dd,del,div,dt,em,footer,h1,h2,h3,h4,h5,h6,i,iframe,img,p,q,s,small,span,strike,strong,sub,sup,table,tbody,td,tr,u{margin:-1px 0 0 0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;font-family:Montserrat,sans-serif}.u{-moz-user-select:none;-webkit-user-select:none;cursor:default}table{border-collapse:collapse;border-spacing:0}body{line-height:1}body{background-color:#000000;overflow-x:hidden}iframe,img,svg{max-width:100%}h1,h1 b,h1 span,h2,h2 b,h2 span,h3,h3 b,h3 span{font-family:Ubuntu,sans-serif}a{text-decoration:none;font-family:Montserrat,sans-serif}a.btn{font-family:Montserrat,sans-serif}em span.lg,em span.md,em span.sm{font-style:italic}@media (max-width:600px){.flex-large,.flex-small{margin-right:0!important;margin-bottom:16px}}.flexrow{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center}.flex-large,.flex-small{flex-basis:100%}.flex-large:last-child,.flex-small:last-child{margin-right:0!important}@media (min-width:600px){.flex-small{flex:1;margin-bottom:0!important;padding-bottom:0!important}.flex-small.half{flex:0 0 calc(1 / 2 * 100%)}.flex-small.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-small.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-small.one-fourth{flex:0 0 calc(1 / 4 * 100%)}.flex-small.two-fourths{flex:0 0 calc(2 / 4 * 100%)}.flex-small.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-small.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-small.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:1000px){.flex-large{flex:1;margin-bottom:0}.flex-large.half{flex:0 0 calc(1 / 2 * 100%)}.flex-large.one-fifth{flex:0 0 calc(1 / 5 * 100%)}.flex-large.two-fifths{flex:0 0 calc(2 / 5 * 100%)}.flex-large.one-fourth,.flex-large.two-fourths{flex:0 0 calc(1 / 4 * 100%)}.flex-large.three-fourths{flex:0 0 calc(3 / 4 * 100%)}.flex-large.one-third{flex:0 0 calc(1 / 3 * 100%)}.flex-large.two-thirds{flex:0 0 calc(2 / 3 * 100%)}}@media (min-width:640px){.sm\:gap-1{gap:6px}.sm\:gap-2{gap:12px!important}.sm\:gap-4{gap:24px}.sm\:gap-6{gap:32px}.sm\:gap-12{gap:64px}.sm\:gap-24{gap:128px}.sm\:grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))}.sm\:grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))}.sm\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}}</style>
+</head>
+<body>
+
+<style>.px-1{padding-left:4px;padding-right:4px}.pt-0.5{padding-top:2px}.mt-4{margin-top:16px}@media (min-width:640px){.sm\:text-sm{font-size:14px;line-height:20px}}.mt-2{margin-top:8px}.mb-2{margin-bottom:8px}.flex{display:flex}.w-full{width:100%}.space-x-1>:not([hidden])~:not([hidden]){margin-left:.25rem}.items-center{align-items:center}.font-\[Helvetica\]{font-family:Helvetica,Arial,sans-serif}.cursor-pointer{cursor:pointer}.rounded-full{border-radius:99999px}.h-12{height:48px}.w-12{width:48px}.flex-col{flex-direction:column}.py-1{padding-top:4px;padding-bottom:4px}.px-3{padding-left:12px;padding-right:12px}.pl-0\.5,.px-0\.5{padding-left:2px}.rounded-\[18px\]{border-radius:18px}.bg-stone-100{background-color:#f5f5f4}.px-0\.5{padding-right:2px}.font-semibold{font-weight:600}.text-\[\#365899\]{color:#365899}.text-\[13px\]{font-size:13px}.leading-4{line-height:16px}.hover\:underline:hover{text-decoration-line:underline}.text-sm{font-size:14px}.relative{position:relative}.justify-between{justify-content:space-between}.grow{flex-grow:1}.text-xs{font-size:12px}.text-\[\#90949c\]{color:#90949c}.ml-px{margin-left:1px}.gap-1{gap:4px}.w-fit{width:fit-content}.hidden{display:none}.-mt-1{margin-top:-4px}.-mt-2{margin-top:-8px}.mr-2{margin-right:8px}.h-4,.h-5{height:16px}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));filter:var(--tw-drop-shadow)}.bg-slate-50{background-color:#f8fafc}.py-0\.5{padding-top:2px;padding-bottom:2px}.pr-1{padding-right:4px}.block{display:block}.w-4{width:16px}.-ml-1{margin-left:-4px}.ml-4{margin-left:16px}.gap-x-0\.5{column-gap:2px}.mr-0\.5{margin-right:2px;margin-left:2px}.border-l{border-left-width:1px}.border-slate-300{border-color:#cbd5e1}.border-dotted{border-style:dotted}.ml-5{margin-left:20px}.h-8{height:32px}.w-8{width:32px}.h-10{height:40px}.w-10{width:40px}@media (min-width:640px){.sm\:w-16{width:64px}.sm\:ml-12{margin-left:48px}}.pl-2{padding-left:8px}</style>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</style>
+<style>.px-1{padding-left:4px;padding-right:4px}.pt-0.5{padding-top:2px}.mt-4{margin-top:16px}@media (min-width:640px){.sm\:text-sm{font-size:14px;line-height:20px}}.mt-2{margin-top:8px}.mb-2{margin-bottom:8px}.flex{display:flex}.w-full{width:100%}.space-x-1>:not([hidden])~:not([hidden]){margin-left:.25rem}.items-center{align-items:center}.font-\[Helvetica\]{font-family:Helvetica,Arial,sans-serif}.cursor-pointer{cursor:pointer}.rounded-full{border-radius:99999px}.h-12{height:48px}.w-12{width:48px}.flex-col{flex-direction:column}.py-1{padding-top:4px;padding-bottom:4px}.px-3{padding-left:12px;padding-right:12px}.pl-0\.5,.px-0\.5{padding-left:2px}.rounded-\[18px\]{border-radius:18px}.bg-stone-100{background-color:#f5f5f4}.px-0\.5{padding-right:2px}.font-semibold{font-weight:600}.text-\[\#365899\]{color:#365899}.text-\[13px\]{font-size:13px}.leading-4{line-height:16px}.hover\:underline:hover{text-decoration-line:underline}.text-sm{font-size:14px}.relative{position:relative}.justify-between{justify-content:space-between}.grow{flex-grow:1}.text-xs{font-size:12px}.text-\[\#90949c\]{color:#90949c}.ml-px{margin-left:1px}.gap-1{gap:4px}.w-fit{width:fit-content}.hidden{display:none}.-mt-1{margin-top:-4px}.-mt-2{margin-top:-8px}.mr-2{margin-right:8px}.h-4,.h-5{height:16px}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));filter:var(--tw-drop-shadow)}.bg-slate-50{background-color:#f8fafc}.py-0\.5{padding-top:2px;padding-bottom:2px}.pr-1{padding-right:4px}.block{display:block}.w-4{width:16px}.z-10{z-index:10}.-ml-1{margin-left:-4px}.ml-4{margin-left:16px}.gap-x-0\.5{column-gap:2px}.mr-0\.5{margin-right:2px;margin-left:2px}.border-l{border-left-width:1px}.border-slate-300{border-color:#cbd5e1}.border-dotted{border-style:dotted}.ml-5{margin-left:20px}.h-8{height:32px}.w-8{width:32px}.h-10{height:40px}.w-10{width:40px}@media (min-width:640px){.sm\:w-16{width:64px}.sm\:ml-12{margin-left:48px}}.pl-2{padding-left:8px}</style>
+<div class="fbComments-nHbwDL2515851" style="margin-left:auto;margin-right:auto">
+<style>
+.fbComments-nHbwDL2515851-element {
+padding: 16px;
+border-radius:20px;
+background-color:#fff;
+}
+.fbComments-nHbwDL2515851-element p, .fbComments-nHbwDL2515851-element span {
+font-family: 'Helvetica', 'Arial', sans-serif;
+}
+</style>
+<div id="testimonials" class="fbComments-nHbwDL2515851-element">
+<p class="text-xs sm:text-sm leading-4 font-semibold mb-2">
+Mostrando 16 comentários
+</p>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/Ipilua6224921.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Lucas Gonçalves disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Um amigo meu me indicou. Não perdi tempo o conteúdo realmente é bom.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+59
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/ydLebA7370654.jpeg" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Marcela Godoy disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Lucas Gonçalves Ainda bem que eu assisti tudo. O botão aparece no final do vídeo!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+12
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/SqzbHq2749401.png" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Maria Clara Lourenço disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Como funciona? Eu também quero começar, alguém me ajuda!!!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+118
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/LsLQlB7791296.jpeg" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Kensly Cabral disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Maria Clara Lourenço Assiste o vídeo até o fim. No final do vídeo vai liberar um botão e aí tu clica nele.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+18
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/ctDluH7736424.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Alana Lima disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Finalmente algo que funciona e não é aquelas baboseiras de marketing e venda de curso.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+83
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/ByGjEP7410609.jpeg" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Jhiullia Freire disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Alana Lima E é sem enrolação também, é só assistir todo o vídeo e clicar no botão que aparece no final.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+64
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/YqczbE2870070.png" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Natália Martins disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Alana Lima O meu marido entrou e realmente Foi uma benção pra gente!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+53
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/xdwQnp3973411.webp" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Vivian Oliveira disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Pelos comentários aqui tem muita gente conseguindo ! Vou entrar também!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+45
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/YHWAhb4001244.webp" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Kelly Marçal disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Vivian Oliveira, sim aqui eu já uso faz 3 meses e até algumas primas minha já estão utilizando, é muito bom! 
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+55
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/xdwQnp3973411.webp" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Vivian Oliveira disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Kelly Marçal, não acredito miga, até você?! acabei de acessar, posso te chamar no PV se eu tiver duvida?????
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+51
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/YHWAhb4001244.webp" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Kelly Marçal disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+@Vivan Oliveira pode sim! Eu te ajudo, qualquer coisa chama lá!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+63
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/pMvfQM7854161.jpeg" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Renato Pereira disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Eu vi várias pessoas indicando isso, até que enfim chegou o momento de entrar e ver se realmente é bom mesmo.
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+54
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/xbvPtD3442948.webp" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Bruno Tanaka disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Sim @Renato, você não vai se arrepender do que vai ver quando entrar .
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+54
+</span>
+</div>
+</div>
+</div>
+<div class="border-l border-slate-300 border-dotted ml-5 sm:ml-12 pl-2 mb-2">
+<div class="flex w-full space-x-1 items-center">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/pMvfQM7854161.jpeg" class="cursor-pointer rounded-full h-8 w-8">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-xs cursor-pointer hover:underline">
+Renato Pereira disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Realmente @Bruno Tanaka, é a melhor coisa que já vi na vida!! Nem acredito ainda kkkkk
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-10 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs">
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold hover:underline cursor-pointer text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+47
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/Apegds3147892.webp" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Marília Eduarda disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Meu irmão de 37 anos me mostrou isso ontem e eu achei que era fraude. Resolvi pagar pra ver e realmente é bom mesmo! Gente é top demais...
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+115
+</span>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<div class="flex w-full space-x-1 items-center font-[Helvetica]">
+<img src="https://img.imageboss.me/atm/cdn/u/XVlXOcY5Lzb9f5avyBEkbD3BCsF2/l/iEwxhX3227789.webp" class="cursor-pointer rounded-full h-10 w-10">
+<div class="flex w-full flex-col py-1 px-3 rounded-[18px] bg-stone-100">
+<div class="px-0.5 py-1">
+<p class="font-semibold text-[#365899] text-[13px] leading-4 cursor-pointer hover:underline">
+Marcos Costa disse:
+</p>
+<p class="text-sm leading-4 pt-0.5">
+Do jeito que está organizado facilita demais sem dúvidas  é muito top!
+</p>
+</div>
+</div>
+</div>
+<div class="flex w-full justify-between">
+<div class="w-12 sm:w-16"></div>
+<div class="grow flex gap-1 text-xs pt-0.5">
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Curtir
+</p>
+<p class="text-[#90949c]">·</p>
+<p class="font-semibold cursor-pointer hover:underline text-[#90949c]">
+Responder
+</p>
+<p class="text-[#90949c]">·</p>
+<div class="text-[#90949c] flex gap-x-0.5 cursor-pointer hover:underline">
+<p class="text-xs text-[#90949c]">
+1
+</p>
+<p class="text-[#90949c] ">min</p>
+</div>
+</div>
+<div class="-mt-2 mr-2 h-5 flex items-center relative drop-shadow rounded-full bg-slate-50 py-0.5 px-1 w-fit">
+<img class="w-4 block" src="https://img.imageboss.me/atm/cdn/p/l.png">
+<img class="w-4 -ml-1 mr-0.5" src="https://img.imageboss.me/atm/cdn/p/h.png">
+<span class="text-xs text-[#90949c] pt-0.5">
+40
+</span>
+</div>
+</div>
+</div>
+<p class="text-xs sm:text-sm leading-4 font-semibold mt-4" style="color:#555;text-align:center;">
+Você precisa estar logado para comentar.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</style>
+</div>
+</div>
+</div>
+<script src="js/deAFii5493742.js" charset="utf-8"></script>
+</body>
+</html>
